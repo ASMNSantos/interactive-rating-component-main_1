@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="rating" id="rating-component">
+          <div class="oval-star">
+            <img src="./images/icon-star.svg" alt="icon star" />
+          </div>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form data-js-form class="progress">
+            <ul class="rating-number">
+              <li class="star-number">
+                <button id="1-star" class="btn" type="button">1</button>
+              </li>
+              <li class="star-number">
+                <button id="2-star" class="btn" type="button">2</button>
+              </li>
+              <li class="star-number">
+                <button id="3-star" class="btn" type="button">3</button>
+              </li>
+              <li class="star-number">
+                <button id="4-star" class="btn" type="button">4</button>
+              </li>
+              <li class="star-number">
+                <button id="5-star" class="btn" type="button">5</button>
+              </li>
+            </ul>
+            <div class="submit-container">
+              <button type="submit" id="submit-btn">
+                <strong>SUBMIT</strong>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="thankyou" id="thankyou-component">
+        <img class="thankyou-img" src="./images/illustration-thank-you.svg" alt="payment machine vector"/>
+        <p class="result" id="dynamic-text"> You selected<span class="dynamic-number"></span>out of 5</p>
+        <h2>Thank You!</h2>
+        <p class="thankyou-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
